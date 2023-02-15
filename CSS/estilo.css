@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FONDOS */
+
+body{
+    background-color: #BAE1DB;
+}
+
+/* TEXTOS */
+h1{
+    text-align: center;
+    color: #164E63;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+a{
+    color:#164E63;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin:150px 50px ; 
+}
+
+main{
+    margin:20px;
+    padding: 20px;
+}
+
+.parrafo{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+.portada{
+    margin-top: 30px;
+    width: 180px;
+    height: 279px;
+}
+
+.social{
+    margin-top: 20px;
+    
+}
+
+.logoW{
+    width: 80px;
+}
+
+form{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+iframe{
+    padding-top: 20px;
+}
+
+.noticia{
+    padding: 20px;
+    
+}
+
+.comentario{
+    border: dashed #0D9488;
+    margin: 15px;
+}
+
+li{
+    margin: 15px; 
+}
+
+a{
+    margin:10px;
+}
+
+/* Cambiar tamaño de fuente para el nav */
+.bg-body-tertiary{
+    background-color: #bae1db !important;
+}
+.btn{
+    background-color:#0D9488;
+    border: none;
+    color: black;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color:#164E63;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
