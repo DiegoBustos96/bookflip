@@ -1,38 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Libros</title>
-        <!-- BOOTSTRAP -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../CSS/estilo.css">
 </head>
+
 <body>
-    
+
     <header>
         <h1>Mis Libros</h1>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="misLibros.html">Mis libros</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="reseñas.html">Reseñas</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="misLibros.html">Mis libros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="noticias.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="reseñas.html">Reseñas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
+
     </header>
 
     <main>
         <h2>Libros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam obcaecati neque ducimus, dicta voluptates hic sint commodi exercitationem necessitatibus dignissimos eveniet consequatur. Ipsum quo, consequuntur molestias blanditiis totam facere.</p>
-        <img class="portada" src="../IMG/portada-1.jpg" alt="Portada de un libro de Sherlock Holmes">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam obcaecati neque ducimus, dicta
+            voluptates hic sint commodi exercitationem necessitatibus dignissimos eveniet consequatur. Ipsum quo,
+            consequuntur molestias blanditiis totam facere.</p>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Portada</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="../IMG/portada-1.jpg"></td>
+                        <td>Sherlock Holmes</td>
+                        <td>Sr. Artur Conan Doyle</td>
+                        <td><input type="checkbox" name="libro1">Leído</td>
+                        <td><input type="checkbox" name="libro1">Leyendo</td>
+                        <td><input type="checkbox" name="libro1">Por leer</td>
+                    </tr>
+                    <tr>
+                        <td><img class="portada" src="../IMG/portada-2.jpg"></td>
+                        <td>Sherlock Holmes 2</td>
+                        <td>Sr. Artur Conan Doyle</td>
+                        <td><input type="checkbox" name="libro2">Leído</td>
+                        <td><input type="checkbox" name="libro2">Leyendo</td>
+                        <td><input type="checkbox" name="libro2">Por leer</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../IMG/La fundacion.jpg"></td>
+                        <td>La fundación</td>
+                        <td>Dan Abnett</td>
+                        <td><input type="checkbox" name="libro3">Leído</td>
+                        <td><input type="checkbox" name="libro3">Leyendo</td>
+                        <td><input type="checkbox" name="libro3">Por leer</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../IMG/La santa.jpg"></td>
+                        <td>La santa</td>
+                        <td>Dan Abnett</td>
+                        <td><input type="checkbox" name="libro4">Leído</td>
+                        <td><input type="checkbox" name="libro4">Leyendo</td>
+                        <td><input type="checkbox" name="libro4">Por leer</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td><img src="../IMG/Horus.jpg"></td>
+                        <td>Horus. Señor de la guerra</td>
+                        <td>Dan Abnett</td>
+                        <td><input type="checkbox" name="libro5">Leído</td>
+                        <td><input type="checkbox" name="libro5">Leyendo</td>
+                        <td><input type="checkbox" name="libro5">Por leer</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- <div class="table-responsive">
+            <table class="table align-middle">
+                <thead>
+                <tr>
+                    <th colspan="4">Portada</th>
+                    <th>Título</th>
+                    <th></th>
+                    <th></th>
+                    <th>Autor</th>
+                    <th>Estado</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td rowspan="2"><img src="../IMG/portada-1.jpg" alt="Portada del libro"></td>
+                    <td></td>
+                    <td>Sherlock Holmes 1</td>
+                    <td><input type="checkbox">Leído</td>
+                    
+                    <td><input type="checkbox">Leyendo</td>
+                </tr>
+                <tr>
+                    <td>Sr. Artur Conan Doyle1</td>
+                    <td>Sr. Artur Conan Doyle</td>
+                    <td>asdad</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><img src="../IMG/portada-2.jpg" alt="Portada del libro"></td>
+                    <td></td>
+                    <td>Sherlock Holmes 2</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sr. Artur Conan Doyle</td>
+                    <td></td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="4">Número total de libros: 2</td>
+                </tr>
+                </tfoot>
+            </table>
+          </div> -->
+        <!-- 
+        <div class="table-responsive">
+            <table class="table align-middle">
+              <thead>
+                <tr>
+                    
+                  <th>Portada</th>
+                  <th>Título</th>
+                  <th>Autor</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                   <img class="portada" src="../IMG/portada-1.jpg" alt="Libro de Sherlock Holmes">
+                  <img class="portada" src="../IMG/portada-2.jpg" alt="Libro de Sherlock Holmes">
+                  <img class="portada" class="portada" src="../IMG/portada-3.jpg" alt="Libro de Sherlock Holmes">
+                  <img class="portada" src="../IMG/portada-4.jpg" alt="Libro de Sherlock Holmes">
+                  <img class="portada" src="../IMG/portada-5.jpg" alt="Libro de Sherlock Holmes">
+                  <img class="portada" src="../IMG/portada-6.jpg" alt="Libro de Sherlock Holmes">
+                </tr>
+                <tr class="align-bottom">
+                  ...
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td>...</td>
+                  <td class="align-top">This cell is aligned to the top.</td>
+                  <td>...</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> -->
+
+
+
+        <!-- <img class="portada" src="../IMG/portada-1.jpg" alt="Portada de un libro de Sherlock Holmes">
         <img class="portada" src="../IMG/portada-2.jpg" alt="Portada del libro Las aventuras de Sherlock Holmes" >
         <img class="portada" src="../IMG/portada-3.jpg" alt="Portada del libro Las aventuras de Sherlock Holmes editorial Austral" >
-        <img class="portada" src="../IMG/portada-4.jpg" alt="Portada de Las obras completas de Sherlock Holmes" >
+        <img class="portada" src="../IMG/portada-4.jpg" alt="Portada de Las obras completas de Sherlock Holmes" > -->
     </main>
 
     <footer>
@@ -42,10 +206,13 @@
 
         <div class="social">
             <a href="https://api.whatsapp.com/send?phone=+569XXXXXXXX">
-            <img class="logoW" src="../IMG/logo-whatsapp.png" alt="Logo de whatsapp"></a>
+                <img class="logoW" src="../IMG/logo-whatsapp.png" alt="Logo de whatsapp"></a>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
