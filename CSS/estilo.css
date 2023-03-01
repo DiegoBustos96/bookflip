@@ -114,8 +114,19 @@ a{
     font-weight: 800;
 }
 
+/* #carouselExampleCaptions{
+    width: 1400px;
+    margin: 50 - 100;
+    overflow-x: hidden;
+    
+}
 
+.carousel-inner img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 
+}  */
 
 
 
