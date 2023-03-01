@@ -12,6 +12,8 @@
 
 body{
     background-color: #BAE1DB;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* TEXTOS */
@@ -93,7 +95,10 @@ a{
     margin:10px;
 }
 
-/* Cambiar tamaño de fuente para el nav */
+/* .form-control{
+    width:100%;
+} */
+
 .bg-body-tertiary{
     background-color: #bae1db !important;
 }
