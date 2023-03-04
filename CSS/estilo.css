@@ -109,27 +109,27 @@ a{
 
 
 .scroll-box {
-    overflow-x: auto; /* permite el desplazamiento horizontal */
-    white-space: nowrap; /* evita que los elementos se rompan */
-    display: flex; /* permite el uso de flexbox */
-    flex-wrap: nowrap; /* evita que los elementos se rompan dentro del contenedor */
+    overflow-x: auto; 
+    white-space: nowrap; 
+    display: flex; 
+    flex-wrap: nowrap; 
   }
   
   .scroll-box__content {
-    display: flex; /* permite el uso de flexbox */
+    display: flex; 
     width: 183px;
     height: 275px;
   }
   
   .scroll-box__item {
-    flex-shrink: 0; /* evita que los elementos se reduzcan en tamaño */
-    margin-right: 16px; /* margen derecho entre elementos */
+    flex-shrink: 0; 
+    margin-right: 16px; 
   }
   
   /* Hacer la caja responsive */
   @media screen and (max-width: 768px) {
     .scroll-box__item {
-      margin-right: 8px; /* reducir margen en dispositivos móviles */
+      margin-right: 8px;
     }
   }
   
