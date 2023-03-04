@@ -134,9 +134,23 @@ a{
   }
   
 
+/* NOTICIAS */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.card {
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 10px;
+  }
 
-
+@media (max-width: 767px) {
+    .cards {
+      flex-direction: column;
+    }
+}
 
 
 
