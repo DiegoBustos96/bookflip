@@ -1,0 +1,30 @@
+//MIXIN
+
+@mixin anclas{
+    color: $color_1;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 150px 50px;
+    margin: 10px;
+}
+
+
+/*HEADER*/
+h1 {
+    text-align: center;
+    color: $color_1;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 15px;
+}
+
+a {
+    @include anclas;
+}
+

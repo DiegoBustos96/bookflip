@@ -1,0 +1,16 @@
+.bg-body-tertiary {
+    background-color: $background-color_1 !important;
+}
+
+.btn {
+    background-color: $background-color_2;
+    border: none;
+    color: $color_2;
+    font-weight: 600;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $background-color_3;
+        font-weight: 800;
+    }
+}

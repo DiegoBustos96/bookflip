@@ -1,0 +1,17 @@
+.scroll-box {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.scroll-box__content {
+    display: flex;
+    width: 183px;
+    height: 275px;
+}
+
+.scroll-box__item {
+    flex-shrink: 0;
+    margin-right: 16px;
+}
