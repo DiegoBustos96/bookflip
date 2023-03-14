@@ -12,3 +12,25 @@ h2 {
     width: 180px;
     height: 279px;
 }
+
+table {
+    max-width: 100%;
+}
+
+table tbody,
+table thead,
+table tfoot,
+table tr,
+table th,
+table td {
+    display: block;
+}
+
+table th,
+table td {
+    float: left;
+}
+
+table tr {
+    clear: both;
+}
